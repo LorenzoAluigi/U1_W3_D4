@@ -31,12 +31,10 @@ const numberExtract = function () {
         // numberTarget.value 
         let number= Math.floor (Math.random ()* 77)
         let divCell = document.querySelectorAll ('.div-cell')
-        console.log (divCell)
-        console.log(number)
+        
   divCell.forEach (index => {
     if (number === parseInt(index.innerText)) {
         index.classList.add ('selected')
-
     }
   })
  }
