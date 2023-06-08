@@ -31,15 +31,39 @@ const numberExtract = function () {
         // numberTarget.value 
         let number= Math.floor (Math.random ()* 77)
         let divCell = document.querySelectorAll ('.div-cell')
-        
+        let couponCell = 
   divCell.forEach (index => {
     if (number === parseInt(index.innerText)) {
         index.classList.add ('selected')
+        
     }
   })
  }
   
 buttonExtrat.onclick = numberExtract
 
+const buttonCoupon = document.getElementById ('create-coupon') 
+const numberCoupon = document.getElementById ("number-coupon")
+const couponContainer = document.getElementById ('coupon')
+console.log(buttonCoupon);
 
+const couponCreator = function () {
+    
+    let generalCouponDiv = document.createElement ('div')
+    generalCouponDiv.classList.add ('div-general')
 
+    // for (let i = 0; i < parseInt (numberCoupon.innerText) ; i++) {  
+for(let j = 0; j < 28; j++) {
+let couponDiv = document.createElement ('div')
+        let couponCell = document.createElement ('span')
+        couponDiv.classList.add ('coupon-cell')
+        couponCell.classList.add ('coupon-board-cell')
+        couponCell.innerText = Math.floor(Math.random()*29)
+        couponContainer.appendChild (generalCouponDiv)
+        generalCouponDiv.appendChild (couponDiv)
+        couponDiv.appendChild (couponCell)
+}
+    }
+// }
+
+buttonCoupon.onclick = couponCreator 
