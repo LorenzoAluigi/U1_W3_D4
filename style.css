@@ -1,0 +1,56 @@
+body {
+    background-image: url(./asset/microsoft_windows_95-wallpaper-2560x1440.jpg) ;
+
+}
+#container {
+width: 80vw;
+box-sizing: border-box;
+background-image: url(./asset/microsoft_windows_95-wallpaper-2560x1440.jpg) ;
+background-position: center;
+}
+header { 
+    text-align: center;
+}
+
+h1 {text-align: center;
+    display: inline-block;
+    width: 50%;
+    background-color: lightgrey
+
+
+}
+#board-container {
+
+padding: 1em;
+border: solid 1px black;
+background-color: lightgrey
+
+
+}
+
+#board {
+padding: 1em;
+border: 2px solid black;
+text-align: center;
+;
+}
+
+.div-cell {
+display: inline-block;
+padding: 0.1em;
+
+}
+
+.board-cell {
+    display: inline-block;
+    width: 50px;
+padding: 0.2em;
+margin: 0.4em;
+border: 1px solid black;
+}
+
+.selected {
+    
+    background-color: darkgrey ;
+    font-weight: bold;
+    }
